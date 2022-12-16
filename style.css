@@ -1,0 +1,111 @@
+:root {
+  --font-large: 4rem;
+  --font-regular: 2.5rem;
+  --font-icon: 2rem;
+
+  --font-bold: bold;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+p {
+  margin: 0;
+}
+
+.background-img {
+  padding-top: 1rem;
+  margin: 2rem auto;
+  width: 60rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.game-btn {
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-icon);
+  line-height: 4.2rem;
+  background-color: whitesmoke;
+  width: 4rem;
+  height: 4rem;
+  border: solid 0.3rem black;
+  border-radius: 1rem;
+}
+.game-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.timer {
+  text-align: center;
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 7rem;
+  height: 3rem;
+  background-color: whitesmoke;
+  border: solid 0.3rem black;
+  border-radius: 0.8rem;
+  font-size: var(--font-regular);
+  line-height: 3.3rem;
+}
+.carrots-count {
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: whitesmoke;
+  border: solid 0.3rem black;
+  border-radius: 50%;
+  font-size: var(--font-regular);
+  text-align: center;
+  line-height: 3.3rem;
+}
+.field {
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+  height: 17rem;
+}
+
+.you-lose-box {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 4rem auto;
+  padding: 1rem;
+  width: 40rem;
+  height: 10rem;
+  background-color: rgba(31, 31, 31, 0.3);
+  border-radius: 1rem;
+}
+.you-lose-text {
+  text-align: center;
+  color: whitesmoke;
+  font-size: var(--font-large);
+  font-weight: var(--font-bold);
+  text-shadow: 0 0 5px black;
+}
+
+.tryagain-btn {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border: solid 0.3rem black;
+  border-radius: 1rem;
+  font-size: var(--font-icon);
+  box-shadow: 0 0 5px black;
+}
+
+.carrot:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
